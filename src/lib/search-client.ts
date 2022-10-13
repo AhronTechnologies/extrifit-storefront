@@ -1,7 +1,7 @@
 import { instantMeiliSearch } from "@meilisearch/instant-meilisearch"
 
 const endpoint =
-  process.env.NEXT_PUBLIC_SEARCH_ENDPOINT || ""
+  process.env.NEXT_PUBLIC_SEARCH_ENDPOINT || "https://docs.meilisearch.com"
 
 const apiKey = process.env.NEXT_PUBLIC_SEARCH_API_KEY || "test_key"
 
