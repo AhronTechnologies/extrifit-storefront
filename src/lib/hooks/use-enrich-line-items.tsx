@@ -18,9 +18,10 @@ const useEnrichedLineItems = (lineItems?: LineItem[], cartId?: string) => {
         cart_id: cartId,
       }
     }
-
     return {
-      id: cart?.items.map((lineItem) => lineItem.variant.product_id),
+      id: cart?.items.map((lineItem) => {
+        return lineItem.variant?.product_id
+      }),
       cart_id: cart?.id,
     }
   }, [lineItems, cart?.items, cart?.id, cartId])
@@ -65,10 +66,10 @@ const useEnrichedLineItems = (lineItems?: LineItem[], cartId?: string) => {
         },
       })
     }
-
+    
+    
     return enrichedItems
   }, [cart?.items, lineItems, products])
-
   return items
 }
 

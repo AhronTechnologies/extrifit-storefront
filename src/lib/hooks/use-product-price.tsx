@@ -33,7 +33,7 @@ const useProductPrice = ({ id, variantId }: useProductPriceProps) => {
     }
 
     const variants = product.variants as CalculatedVariant[]
-
+    console.log(variants);
     const cheapestVariant = variants.reduce((prev, curr) => {
       return prev.calculated_price < curr.calculated_price ? prev : curr
     })

@@ -15,7 +15,6 @@ const CartTemplate = () => {
   if (!cart || !cart?.id?.length || isLoading) {
     return <SkeletonCartPage />
   }
-
   return (
     <div className="bg-gray-50 py-12">
       <div className="content-container">

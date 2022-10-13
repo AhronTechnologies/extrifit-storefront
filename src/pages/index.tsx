@@ -13,6 +13,9 @@ const Home: NextPageWithLayout = () => {
         description="Shop all available models only at the ACME. Worldwide Shipping. Secure Payment."
       />
       <Hero />
+      <div className="testContent">
+        Testovací obsah
+      </div>
       <FeaturedProducts />
     </>
   )
